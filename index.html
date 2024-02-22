@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narasimha Vadde - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Portfolio</h1>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#profiles">Profiles</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hireme" class="hire-me">
+        <div class="container">
+            <div class="hire-content">
+                <div class="hire-left">
+                    <h1>I'm Narasimha Vadde</h1><br>
+                    <button class="hire-btn" onclick="copyEmail()">Hire Me</button>
+                    <button class="download-btn" onclick="downloadResume()">Download Resume</button>
+                </div>
+                <div class="hire-right">
+                    <img src="images/profile.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-right">
+                </div>
+                <div class="about-left">
+                <div class="section-heading">
+                    <h2>About Me</h2>
+                </div>
+                    <p>I am a dedicated and enthusiastic computer science graduate passionate about leveraging technology to solve real-world problems. With a strong foundation in programming languages like Java, Python, and C, along with a keen interest in machine learning and cybersecurity, I am always eager to explore new challenges and opportunities in the field of technology.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+ <section id="projects" class="projects-section">
+    <div class="container">
+        <div class="section-heading">
+        <h2>Projects</h2>
+        </div>
+        <div class="projects">
+        <div class="project-box" onclick="showDetails('Project 1', 'Objective 1', 'Description 1')">
+            <div class="project-image">
+                <img src="images/oral.png" alt="Project 1">
+            </div>
+            <div class="project-title">Oral Cancer identification</div>
+            <div class="detailed-description-content" style="display: none;">
+                <h2>Oral Cancer identification</h2>
+                <p><strong>Objective:</strong> The objective of the project is to develop an Automatic Oral Cancer Identification System that helps to identify the given input image belongs to Benign (Non-Cancerous) or Malignant(Cancerous).
+                </p>
+                <p><strong>Description:</strong> Description 1</p>
+                <p></p><a href="https://narasimha046.github.io/buildeasy/">Click here for project </a></p>
+            </div>
+        </div>
+    <div class="project-box" onclick="showDetails('Project 2', 'Objective 2', 'Description 2')">
+        <div class="project-image">
+            <img src="images/Buildeasy.png" alt="Project 2">
+        </div>
+        <div class="project-title">Project 2</div>
+        <div class="detailed-description-content" style="display: none;">
+            <h2>Project 2</h2>
+            <p><strong>Objective:</strong> Objective 2</p>
+            <p><strong>Description:</strong> Description 2</p>
+        </div>
+    </div>
+    </div>
+</section>
+<div class="detailed-description" id="detailedDescription">
+    <div class="detailed-description-content" id="detailedDescriptionContent">
+    </div>
+</div>
+    <section id="skills" class="skills">
+        <div class="skill-content">
+            <div class="section-heading">
+                <h2>Skills</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="single-skill-content">
+                            <div class="barWrapper">
+                                <span class="progressText">Java</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" style="width: 80%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>80%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">HTML</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 90%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>90%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">CSS</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="10" aria-valuemax="100" style="width: 70%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>70%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">JavaScript</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="10" aria-valuemax="100" style="width: 60%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>60%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single-skill-content">
+                            <div class="barWrapper">
+                                <span class="progressText">problem-solving</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 90%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>90%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+
+                            <div class="barWrapper">
+                                <span class="progressText">communication</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="width: 97%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>97%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText"> creativity</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 90%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>90%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div>	<!-- /.container -->
+        </div><!-- /.skill-content-->
+
+</section>
+    <section id="education" class="education">
+        <div class="section-heading1">
+            <h2>education</h2>
+        </div>
+        <div class="container">
+            <div class="education-horizontal-timeline">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2021 - present</h2>
+                                <h3>B.Tech <span>in </span> computer science<br> and Business Systems</h3>
+                            </div><!--/.experience-time-->
+                            <div class="timeline-horizontal-border">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span class="single-timeline-horizontal"></span>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        G.Pulla Redddy Engineering College
+                                    </h4>
+                                    <h5>Kurnool, Andhra Pradesh</h5>
+                                    <p class="description">
+                                        Cgpa:8.08<br>
+                                        Achievements
+                                    </p>
+                                </div><!--/.timeline-content-->
+                            </div><!--/.timeline-->
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2018 - 2021</h2>
+                                <h3>Diploma <span>in </span> computer Engineering</h3><br>
+                            </div><!--/.experience-time-->
+                            <div class="timeline-horizontal-border">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span class="single-timeline-horizontal"></span>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        Government Polytechnic College
+                                    </h4>
+                                    <h5>Proddatur,Kadapa, Andhra Pradesh</h5>
+                                    <p class="description">
+                                        Percentage:69.51<br>
+                                        Achievements
+                                    </p>
+                                </div><!--/.timeline-content-->
+                            </div><!--/.timeline-->
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2017 - 2018</h2>
+                                <h3>SSC </h3><br>
+                            </div><!--/.experience-time-->
+                            <div class="timeline-horizontal-border">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span class="single-timeline-horizontal spacial-horizontal-line
+                                "></span>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        Z.P.High School
+                                    </h4>
+                                    <h5>Somayajulapalli,Kurnool,Andhra Pradesh</h5>
+                                    <p class="description">
+                                        CGPA:8.8<br>
+                                        Achievements
+                                    </p>
+                                </div><!--/.timeline-content-->
+                            </div><!--/.timeline-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="profiles" class="profiles">
+        <div class="profiles-details">
+            <div class="section-heading text-center">
+                <h2>profiles</h2>
+            </div>
+            <div class="container">
+                <div class="profiles-content">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="single-profile">
+                                <div class="profile-txt">
+                                    <a href="https://github.com/Narasimha046"><i class="fa fa-github" style="font-size:36px"></i></a>
+                                    <div class="profile-icon-name">Git-hub</div>
+                                </div>
+                                <div class="single-profile-overlay">
+                                    <div class="profile-txt">
+                                        <a href="https://github.com/Narasimha046"><i class="fa fa-github" style="font-size:36px"></i></a>
+                                        <div class="profile-icon-name">Git-hub</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="single-profile">
+                                <div class="profile-txt">
+                                    <a href="https://www.linkedin.com/in/vadde-narasimha-d046/"><i class='fa fa-linkedin' style='font-size:35px'></i></a>
+                                    <div class="profile-icon-name">Linkedin</div>
+                                </div>
+                                <div class="single-profile-overlay">
+                                    <div class="profile-txt">
+                                        <a href="https://www.linkedin.com/in/vadde-narasimha-d046/"><i class='fa fa-linkedin' style='font-size:35px'></i></a>
+                                        <div class="profile-icon-name">Linkedin</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="single-profile">
+                                <!-- Profile icon without overlay -->
+                                <div class="profile-txt">
+                                    <a href="https://leetcode.com/Narasimha_Jarapati/"><img src="images/OIP.png" alt="leetcode"></a>
+                                    <div class="profile-icon-name">leetcode</div>
+                                </div>
+
+                                    <!-- Profile icon with overlay -->
+                                <div class="single-profile-overlay">
+                                    <div class="profile-txt">
+                                        <a href="https://leetcode.com/Narasimha_Jarapati/"><img src="images/OIP.png" alt="leetcode"></a>
+                                        <div class="profile-icon-name">leetcode</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-heading ">
+            <h2>contact me</h2>
+        </div>
+        <div class="container">
+            <div class="contact-content">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <div class="row">
+                        <div class="single-contact-box">
+                            <div class="contact-form">
+                                <form>
+                                    <input type="hidden" name="access_key" value="88ccd9f0-a5b0-48ef-86aa-9dbf4e72d37d">
+                                    <div class="row">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="name" placeholder="Name*" name="name" required>
+                                            </div><!--/.form-group-->
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="email" placeholder="Email*" name="email" required>
+                                            </div><!--/.form-group-->
+                                    </div><!--/.row-->
+                                    <div class="row">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" required>
+                                            </div><!--/.form-group-->
+                                    </div><!--/.row-->
+                                    <div class="row">
+                                            <div class="form-group">
+                                                <textarea class="form-control" rows="8" id="comment" placeholder="Message"></textarea>
+                                            </div><!--/.form-group-->
+                                    </div><!--/.row-->
+                                    <div class="row">
+                                            <div class="single-contact-btn">
+                                                <button type="submit" class="contact-btn">Submit Form</button>
+                                            </div><!--/.single-single-contact-btn-->
+                                    </div><!--/.row-->
+                                </form><!--/form-->
+                            </div><!--/.contact-form-->
+                        </div><!--/.single-contact-box-->
+                        <div class="single-contact-box">
+                            <div class="contact-adress">
+                                <div class="contact-add-head">
+                                    <h3>Narasimha Vadde</h3>
+                                    <p>Student</p>
+                                </div>
+                                <div class="contact-add-info">
+                                    <div class="single-contact-add-info">
+                                        <h3>phone</h3>
+                                        <p>+91 6281189994</p>
+                                    </div>
+                                    <div class="single-contact-add-info">
+                                        <h3>email</h3>
+                                        <p>vaddenarasimha46@gmail.com</p>
+                                    </div>
+
+                                </div>
+                            </div><!--/.contact-adress-->
+                            <div class="hm-foot-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li><!--/li-->
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li><!--/li-->
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li><!--/li-->
+                                    <li><a href="https://www.linkedin.com/in/vadde-narasimha-d046/"><i class="fa fa-linkedin"></i></a></li><!--/li-->
+                                    <li><a href="https://www.instagram.com/singa_jarapati/"><i class="fa fa-instagram"></i></a></li><!--/li-->
+                                </ul><!--/ul-->
+                            </div><!--/.hm-foot-icon-->
+                        </div><!--/.single-contact-box-->
+                </div><!--/.row-->
+            </div><!--/.contact-content-->
+        </div><!--/.container-->
+
+    </section>
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get the form fields
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    // Email content
+    $to = "vaddenarasimha46@gmail.com";
+    $email_subject = "New Contact Form Submission: $subject";
+    $email_body = "You have received a new message from your website contact form.\n\n".
+                  "Here are the details:\n\nName: $name\n\nEmail: $email\n\nMessage:\n$message";
+
+    // Send email
+    mail($to, $email_subject, $email_body);
+}
+?>
+
+    <footer class="footer">
+        <button class="ft-btn" onclick="downloadResume()">Download Resume</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
