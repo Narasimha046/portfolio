@@ -408,25 +408,6 @@
         </div><!--/.container-->
 
     </section>
-    <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get the form fields
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-
-    // Email content
-    $to = "vaddenarasimha46@gmail.com";
-    $email_subject = "New Contact Form Submission: $subject";
-    $email_body = "You have received a new message from your website contact form.\n\n".
-                  "Here are the details:\n\nName: $name\n\nEmail: $email\n\nMessage:\n$message";
-
-    // Send email
-    mail($to, $email_subject, $email_body);
-}
-?>
-
     <footer class="footer">
         <button class="ft-btn" onclick="downloadResume()">Download Resume</button>
     </footer>
